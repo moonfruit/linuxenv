@@ -1,0 +1,40 @@
+[user]
+	name = MoonFruit
+	email = dkmoonfruit@gmail.com
+
+[color]
+	ui = auto
+
+[core]
+	excludesfile= ~/.gitignore
+	quotepath = false
+
+[merge]
+	tool = vimdiff
+
+[merge "ours"]
+	name = ours merge driver
+	driver = true
+
+[push]
+	default = simple
+
+#[https]
+#	proxy = https://dkmoonfruit:QAZwsxEDC@192.168.77.1:9000
+#[http]
+#	proxy = http://dkmoonfruit:QAZwsxEDC@192.168.77.1:9000
+
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	di = diff
+	dic = diff --cached
+	glog = log --graph
+	mlog = log --stat --summary
+	h = help
+	mg = merge
+	rb = rebase
+	ss = stash
+	st = status
+	un = reset HEAD --

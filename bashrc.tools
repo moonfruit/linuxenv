@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# If not in bash, don't do anything below
+[ -z "$BASH_VERSION" ] && return
+
+# ==== bash_completion ==== {{{
+[[ -s /etc/bash_completion ]] && . /etc/bash_completion
+# }}}
+
+# ==== autojump ==== {{{
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
+# }}}
+
+# ==== iterm2 ==== {{{
+[[ -s "$APP_HOME/etc/bash/iterm2.bash" ]] && . "$APP_HOME/etc/bash/iterm2.bash"
+# }}}
+
+# vim: filetype=sh
