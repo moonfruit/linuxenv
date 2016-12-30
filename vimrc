@@ -129,6 +129,8 @@ endif
 highlight User1 term=inverse,bold cterm=inverse,bold ctermfg=red
 set statusline=%f\ %1*%m%*%<%h%w%r%y%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}%=%-9.([%03b]%)%-10.([0x%02B]%)%-19.(%-13.(%l,%c%V%)\ %P%)
 
+command W w !sudo tee %
+
 " pathgen
 execute pathogen#infect()
 

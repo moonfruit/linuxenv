@@ -51,11 +51,11 @@ syn region  gitcommitUnmerged	start=/^# 未合并的路径：/ end=/^#$\|^#\@!/ 
 
 
 syn match   gitcommitDiscardedType	"\t\@<=[[:lower:]][^:]*[[:lower:]]: "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitDiscardedFile skipwhite
-syn match   gitcommitDiscardedType	"\t.*： "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitDiscardedFile skipwhite
+syn match   gitcommitDiscardedType	"\t.*[：:] "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitDiscardedFile skipwhite
 syn match   gitcommitSelectedType	"\t\@<=[[:lower:]][^:]*[[:lower:]]: "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitSelectedFile skipwhite
-syn match   gitcommitSelectedType	"\t.*： "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitSelectedFile skipwhite
+syn match   gitcommitSelectedType	"\t.*[：:] "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitSelectedFile skipwhite
 syn match   gitcommitUnmergedType	"\t\@<=[[:lower:]][^:]*[[:lower:]]: "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitUnmergedFile skipwhite
-syn match   gitcommitUnmergedType	"\t.*： "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitUnmergedFile skipwhite
+syn match   gitcommitUnmergedType	"\t.*[：:] "he=e-2	contained containedin=gitcommitComment nextgroup=gitcommitUnmergedFile skipwhite
 
 
 syn match   gitcommitDiscardedFile	".\{-\}\%($\| -> \)\@=" contained nextgroup=gitcommitDiscardedArrow
